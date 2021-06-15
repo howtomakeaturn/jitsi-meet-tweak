@@ -233,10 +233,10 @@ function _mapStateToProps(state, ownProps) {
     } = state['features/dynamic-branding'];
     const isValidRoom = state['features/base/conference'].room;
     const {
-        DEFAULT_LOGO_URL,
         JITSI_WATERMARK_LINK,
         SHOW_JITSI_WATERMARK
     } = interfaceConfig;
+    const DEFAULT_LOGO_URL = '/images/dog.png';
     let _showJitsiWatermark = (
         customizationReady && !customizationFailed
         && SHOW_JITSI_WATERMARK)
