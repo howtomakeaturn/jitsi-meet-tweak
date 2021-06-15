@@ -201,10 +201,12 @@ class WelcomePage extends AbstractWelcomePage {
                     <div className = 'header-image' />
                     <div className = 'header-container'>
                         <h1 className = 'header-text-title'>
-                            { t('welcomepage.headerTitle') }
+                            {/* { t('welcomepage.headerTitle') } */}
+                            這是由 PickOne 修改過的系統標題
                         </h1>
                         <span className = 'header-text-subtitle'>
-                            { t('welcomepage.headerSubtitle')}
+                            {/* { t('welcomepage.headerSubtitle')} */}
+                            這是由 PickOne 修改過的系統副標題
                         </span>
                         <div id = 'enter_room'>
                             <div className = 'enter-room-input-container'>
