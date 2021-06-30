@@ -14,3 +14,28 @@
 cd web/
 docker build --no-cache -t jitsi/web:tweak .
 ```
+
+---
+
+Developer notes
+
+```
+/**
+ * Modification by @howtomakeaturn
+ */
+ .filmstrip {
+    width: 100%;
+    max-width: none;
+    right: -50%;
+    z-index: 2;
+    padding: 0;
+}
+
+#localVideoWrapper video {
+    width: 50%;
+}
+
+#largeVideoWrapper video {
+    width: 50%;
+}
+```
