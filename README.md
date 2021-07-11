@@ -57,3 +57,5 @@ echo "Rebuilding Jitsi-Meet web Docker image" && sleep 1
 
 docker build -t jitsi/web . || { echo "Docker operation failed"; exit 1; }
 ```
+
+- notice that for the last line, you should build with our tag & no-cache
