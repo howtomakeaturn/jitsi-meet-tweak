@@ -39,3 +39,19 @@ Developer notes
     width: 50%;
 }
 ```
+
+```
+make || { echo "Make failed"; exit 1; }
+make source-package || { echo "Make source-package failed"; exit 1; }
+
+echo "Moving and unzipping Jitsi-Meet package archive into Docker build context" && sleep 1
+
+mv $TELEHEALTH_JITSI_MEET_DIR/jitsi-meet.tar.bz2 $REPO_ROOT/Docker/web || { echo "Failed to move packages to destination"; exit 1; }
+cd $REPO_ROOT/Docker/web || { echo "Failed to find $REPO_ROOT/Docker/Web"; exit 1; }
+tar -xvf jitsi-meet* || { echo "Failed to unzip archive"; exit 1; }
+rm -rf $REPO_ROOT/Docker/web/jitsi-meet.tar.bz2
+
+echo "Rebuilding Jitsi-Meet web Docker image" && sleep 1
+
+docker build -t jitsi/web . || { echo "Docker operation failed"; exit 1; }
+```
