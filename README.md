@@ -40,6 +40,8 @@ Developer notes
 }
 ```
 
+- https://alexclaydon.dev/post/2020-10-05-jitsi-meet-deployment
+
 ```
 make || { echo "Make failed"; exit 1; }
 make source-package || { echo "Make source-package failed"; exit 1; }
