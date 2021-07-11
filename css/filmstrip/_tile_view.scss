@@ -129,3 +129,14 @@
         }
     }
 }
+
+/**
+ * Modification by @howtomakeaturn
+ */
+.filmstrip {
+    width: 100% !important;
+    max-width: none !important;
+    right: -50% !important;
+    z-index: 2 !important;
+    padding: 0 !important;
+}

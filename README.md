@@ -23,7 +23,7 @@ Developer notes
 /**
  * Modification by @howtomakeaturn
  */
- .filmstrip {
+.filmstrip {
     width: 100%;
     max-width: none;
     right: -50%;
